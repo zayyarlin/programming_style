@@ -4,7 +4,7 @@
 from collections import Counter
 
 punctuation = ['“','”', '.', ',']
-stop_words = ['a', 'an', 'the', 'of', 'it', 'is', '', 'and', 'to']
+stop_words = {'a', 'an', 'the', 'of', 'it', 'is', '', 'and', 'to'}
 
 def term_freq(doc, n = 10, punctuation= [], stop_words = []):
     # Make every word small letters
